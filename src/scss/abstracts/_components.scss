@@ -1,0 +1,31 @@
+
+
+@mixin input-field-style($color, $bg-color, $fnt-fam){
+    font-size: 1.2rem;
+    padding: 0.3em;
+    border-radius: 0.2rem;
+    border: none;
+    text-align: right;
+    color: $color;
+    font-family: $fnt-fam;
+    font-weight: 700;
+    background-color: $bg-color;
+    width: 100%;
+    transition: outline-color 0.15s ease-in-out;
+    outline: 2px solid transparent;   
+} 
+
+@mixin button-style($color, $bg-color, $fnt-fam, $fnt-size){
+    font-size:  $fnt-size;
+    grid-column: span 1;
+    padding: 0.3em 0;
+    font-family: $fnt-fam;
+    outline: none;
+    border: none;
+    color: $color;
+    font-weight: 700;
+    background-color: $bg-color;
+    border-radius: 0.25rem;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    cursor: pointer;
+}

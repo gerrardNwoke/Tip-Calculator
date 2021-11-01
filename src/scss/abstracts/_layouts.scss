@@ -1,0 +1,15 @@
+@mixin resethtml{
+    
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+}
+
+@mixin centerAlignText ($width, $height){
+    width: $width;
+    height: $height;
+    text-align: center;
+    line-height: $height;
+}
+
+

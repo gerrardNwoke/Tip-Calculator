@@ -1,0 +1,15 @@
+$primary-clr: hsl(172, 67%, 45%);
+
+$clr-1: hsl(183, 100%, 15%);
+$clr-2: hsl(186, 14%, 43%);
+$clr-3: hsl(184, 14%, 56%);
+$clr-4: hsl(172, 67%, 45%);
+$clr-5: hsl(185, 41%, 84%);
+$clr-6: hsl(189, 41%, 97%);
+$clr-7: hsl(181, 35%, 29%);
+$white: hsl(0, 0%, 100%)
+;
+
+@mixin gradient{
+    background: linear-gradient(90deg ,hsla(6, 100%, 80%, 1),  hsl(335, 100%, 65%, 1));
+}

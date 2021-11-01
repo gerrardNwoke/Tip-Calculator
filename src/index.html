@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./scss/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Tip calculator</title>
+</head>
+<body>
+    <section class="container">
+        <div class="logo-div">
+            <img src="./images/logo.svg" alt="logo.svg">
+        </div>
+        <div class="calculator-container">
+            <div class="left-split">
+
+                <div class="bill-div">
+                    <label for="bill">Bill</label>
+                    <input type="number" min="0" name="bill" id="bill" placeholder="0" oninput="tip()"><i class="fas fa-dollar-sign"></i>
+                </div>
+
+                <div class="tip-options">
+                    <h4>Select Tip%</h4>
+                    <button onclick="btn5()" id="5%" class="tip-btn">5%</button>
+
+                    <button onclick="btn10()" id="10%" class="tip-btn">10%</button>
+
+                    <button onclick="btn15()" id="15%" class="tip-btn">15%</button>
+
+                    <button onclick="btn25()" id="25%" class="tip-btn">25%</button>
+
+                    <button onclick="btn50()" id="50%" class="tip-btn">50%</button>
+                    
+                    <input type="number" min="0" name="custom-tip" id="custom-tip" placeholder="Custom" 
+                    oninput="btnCustom()" onclick="btnCustom()">
+                    
+                </div>
+
+                <div class="people-count">
+                    <i class="fas fa-user"></i>
+                    <label class="people"> Number of people </label>
+                    <label id="errorMsg">Can't be zero</label>
+                    <input type="number" min="0" name="people" id="people" placeholder="0"
+                    oninput="tip()">
+                </div>
+
+            </div>
+
+            <div class="right-split">
+                <div class="tip">
+                    <h4>Tip Amount </h4>
+                    <h5>/ person</h5> 
+                    <h2 id="tip-amount">$0.00</h2>
+                </div>
+
+                <div class="total"> 
+                    <h4>Total </h4>
+                    <h5>/ person</h5> 
+                    <h2 id="total">$0.00</h2>
+                </div>
+
+                <button class="reset" onclick="reset()">RESET</button>
+            </div>
+        </div>
+    </section>
+    <script src="calculator.js"></script>
+</body>
+</html>
